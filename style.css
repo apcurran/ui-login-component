@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --light-grey: hsl(228, 7%, 88%);
+    --med-grey: hsl(0, 0%, 52%);
+}
+
+body,
+input,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #308ca2;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -14,7 +29,7 @@ body {
 }
 
 .login-card {
-    width: 50rem;
+    width: 62rem;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
  
@@ -23,10 +38,78 @@ body {
 }
 
 .card-left {
-    padding: 2rem;
+    padding: 3rem 6.5rem;
     background-color: #fff;
     color: #111;
     border-radius: 10px 0 0 10px;
+}
+
+.card-left__title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+
+    margin-bottom: 2rem;
+}
+
+.card-left__para {
+    margin-bottom: 2.5rem;
+}
+
+.form-group {
+    margin: 1.5rem 0 3.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__input {
+    padding: .75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form__input::placeholder {
+    color: var(--med-grey);
+}
+
+.form-group__link {
+    text-decoration: none;
+}
+
+.form-group__submit {
+    padding: .75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #046586;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 10px 16px -7px rgba(4, 101, 134, .55);
+}
+
+.form-group__submit > * {
+    margin: 0 .4rem;
+}
+
+.icon-arrow {
+    fill: #fff;
+}
+
+.card-left__top {
+    border-bottom: 2px solid var(--light-grey);
+}
+
+.card-left__bottom__title {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: .9rem;
+    color: var(--med-grey);
 }
 
 .card-right__img {

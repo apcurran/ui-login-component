@@ -3,13 +3,45 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@700&display=swap" rel="preload stylesheet" as="style">
         <link rel="preload stylesheet" as="style" href="style.css">
         <title>UI Log In Component</title>
     </head>
     <body>
         <article class="login-card">
             <section class="card-left">
-
+                <section class="card-left__top">
+                    <h2 class="card-left__title">Log In</h2>
+                    <p class="card-left__para">
+                        Log in to your account to upload or download images, videos, or music.
+                    </p>
+                    <form class="card-left__form form">
+                        <input type="text" class="form__input" aria-label="Email address" placeholder="Enter your email address">
+                        <div class="form-group">
+                            <a href="#" class="form-group__link">Forgot your password?</a>
+                            <button class="form-group__submit" type="submit">
+                                <span>Next</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path class="icon-arrow" d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </section>
+                <section class="card-left__bottom">
+                    <h3 class="card-left__bottom__title">Or, log in with</h3>
+                    <div class="card-left__bottom__group">
+                        <button class="card-left__bottom__group__btn">
+                            <img src="" alt="Facebook icon">
+                            <span>Facebook</span>
+                        </button>
+                        <button class="card-left__bottom__group__btn">
+                            <img src="" alt="Google icon">
+                            <span>Google</span>
+                        </button>
+                    </div>
+                    <p class="card-left__bottom__notice">Don't have an account yet? <a href="#">Sign Up</a></p>
+                </section>
             </section>
             <section class="card-right">
                 <img loading="eager" src="./images/ice-texture.jpg" alt="Blue ice" class="card-right__img">
