@@ -31,7 +31,7 @@ body {
 .login-card {
     width: 62rem;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.35fr 1fr;
  
     border-radius: 10px;
     box-shadow: 0 20px 18px -15px rgba(0, 0, 0, .16);
@@ -47,6 +47,7 @@ body {
 .card-left__title {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
+    font-size: 2rem;
 
     margin-bottom: 2rem;
 }
@@ -110,6 +111,34 @@ body {
     text-align: center;
     font-size: .9rem;
     color: var(--med-grey);
+}
+
+.card-left__bottom__group {
+    margin-bottom: 2.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-left__bottom__group__btn {
+    padding: .75rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+}
+
+.card-left__bottom__group__btn img {
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.card-left__bottom__notice {
+    text-align: center;
 }
 
 .card-right__img {
